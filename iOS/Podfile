@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+
+target 'RNDemo' do
+    pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTText',
+    'RCTWebSocket',
+    ]
+    pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+end
